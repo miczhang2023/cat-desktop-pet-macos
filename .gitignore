@@ -1,0 +1,9 @@
+.DS_Store
+build/
+*.app
+*.dmg
+*.zip
+
+# 抠图与姿态生成的中间素材；运行时只需要透明 PNG 成品。
+Resources/cat-chroma-*.png
+Resources/Directions/*-chroma.png
