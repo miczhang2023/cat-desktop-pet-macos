@@ -30,8 +30,8 @@ xattr -dr com.apple.quarantine "/Applications/小橘桌宠.app"
 需要 macOS 13 或更高版本，以及 Apple Command Line Tools。
 
 ```sh
-./scripts/build.sh
-./scripts/package_dmg.sh
+zsh scripts/build.sh
+zsh scripts/package_dmg.sh
 ```
 
 构建产物位于 `build/`。
