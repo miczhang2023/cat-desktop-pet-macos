@@ -9,7 +9,7 @@ DMG_PATH="$BUILD_DIR/$APP_NAME.dmg"
 STAGING_DIR="$BUILD_DIR/dmg-staging"
 
 if [[ ! -d "$APP_BUNDLE" ]]; then
-  "$PROJECT_DIR/scripts/build.sh"
+  zsh "$PROJECT_DIR/scripts/build.sh"
 fi
 
 rm -rf "$STAGING_DIR"
