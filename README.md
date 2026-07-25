@@ -6,6 +6,8 @@
 
 前往 [Releases](https://github.com/miczhang2023/cat-desktop-pet-macos/releases) 下载最新版 DMG。应用为 Apple Silicon 与 Intel 通用版本。
 
+支持 macOS 12.0 或更高版本；“开机启动”功能需要 macOS 13.0 或更高版本。
+
 ## 功能
 
 - 透明、无边框、始终置顶，可拖动
@@ -14,7 +16,7 @@
 - 单击弹跳并播放声音
 - 双击切换休息/互动状态
 - 鼠标滚轮缩放，或在右键/菜单栏菜单中选择放大、缩小
-- 右键或菜单栏控制显示、暂停、开机启动和退出
+- 右键或菜单栏控制显示、暂停、开机启动（macOS 13+）和退出
 - 支持多桌面与全屏空间
 
 ## 使用
@@ -27,7 +29,7 @@ xattr -dr com.apple.quarantine "/Applications/小橘桌宠.app"
 
 ## 构建
 
-需要 macOS 13 或更高版本，以及 Apple Command Line Tools。
+需要 macOS 12 或更高版本，以及 Apple Command Line Tools。
 
 ```sh
 zsh scripts/build.sh

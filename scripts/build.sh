@@ -9,7 +9,9 @@ CONTENTS="$APP_BUNDLE/Contents"
 MACOS_DIR="$CONTENTS/MacOS"
 RESOURCES_DIR="$CONTENTS/Resources"
 EXECUTABLE="CatDesktopPet"
-MIN_MACOS="13.0"
+MIN_MACOS="12.0"
+APP_VERSION="2.0.1"
+BUILD_VERSION="3"
 
 rm -rf "$APP_BUNDLE"
 mkdir -p "$BUILD_DIR/tools" "$BUILD_DIR/assets" "$MACOS_DIR" "$RESOURCES_DIR"
@@ -101,9 +103,9 @@ cat > "$CONTENTS/Info.plist" <<PLIST
   <key>CFBundlePackageType</key>
   <string>APPL</string>
   <key>CFBundleShortVersionString</key>
-  <string>2.0.0</string>
+  <string>$APP_VERSION</string>
   <key>CFBundleVersion</key>
-  <string>2</string>
+  <string>$BUILD_VERSION</string>
   <key>LSMinimumSystemVersion</key>
   <string>$MIN_MACOS</string>
   <key>LSUIElement</key>

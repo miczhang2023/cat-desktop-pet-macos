@@ -321,6 +321,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         sizeItem?.title = "大小：\(scalePercentage)"
 
         if #available(macOS 13.0, *) {
+            launchAtLoginItem?.isEnabled = true
             switch SMAppService.mainApp.status {
             case .enabled:
                 launchAtLoginItem?.state = .on
@@ -332,6 +333,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
                 launchAtLoginItem?.state = .off
                 launchAtLoginItem?.title = "开机启动"
             }
+        } else {
+            launchAtLoginItem?.isEnabled = false
+            launchAtLoginItem?.state = .off
+            launchAtLoginItem?.title = "开机启动（需要 macOS 13）"
         }
     }
 }
